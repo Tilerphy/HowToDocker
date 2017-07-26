@@ -1,0 +1,22 @@
+# build an image 
+docker build -t <projectname> <dirpath>
+
+# get all availiable images
+docker images
+
+# Run an image
+docker run -p <outsideport>:<insideport> <image-name> 
+
+# Run an image in daemon mode / background mode
+docker run -d -p <outsideport>:<insideport> <image-name> 
+
+# List all running dockers
+docker ps
+
+# Create tag for the docker
+docker tag image <username>/<projectname>:<tagName>
+
+# Share image online
+docker push <username>/<projectname>:<tagName>
+
+
