@@ -20,3 +20,5 @@ docker tag image <username>/<projectname>:<tagName>
 docker push <username>/<projectname>:<tagName>
 
 
+# Create a swarm
+docker swarm init --advertise-addr 192.168.88.139
