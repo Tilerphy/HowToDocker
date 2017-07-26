@@ -22,3 +22,9 @@ docker push <username>/<projectname>:<tagName>
 
 # Create a swarm
 docker swarm init --advertise-addr 192.168.88.139
+
+# Deploy an app
+docker stack deploy -c <docker-compose>.yml <appname>
+
+# Remove the app
+docker stack remove <appname>
